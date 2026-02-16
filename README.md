@@ -1,1 +1,1 @@
-# selenium-practice
+# Simple exercise using selenium
