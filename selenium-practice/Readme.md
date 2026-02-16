@@ -13,4 +13,3 @@ End-to-end automation test using Selenium and Java.
 ## Tools
 - Java
 - Selenium WebDriver
-- TestNG
