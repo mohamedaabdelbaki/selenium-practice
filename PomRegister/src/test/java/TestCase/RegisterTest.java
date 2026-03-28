@@ -10,9 +10,9 @@ public class RegisterTest  extends BaseTest{
 
     public void RegisterWithValidDAta()
     {
-        RegisterPage register=new RegisterPage(driver);
+        RegisterPage register =new RegisterPage(driver);
         register.fillName("samy");
-        register.fillEmailAddress("samy"+register.randomSelection(100)+"@yahoo.com");
+        register.fillEmailAddress("T"+register.randomSelection(100)+"@yahoo.com");
         register.signupClick();
 
         register.titleClick();

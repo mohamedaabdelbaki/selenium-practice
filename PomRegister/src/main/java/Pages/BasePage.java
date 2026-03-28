@@ -38,9 +38,15 @@ public class BasePage {
         return num;
     }
 
+    public void randGenderSelect(By Locator)
+    {
+       options = driver.findElements(Locator);
+        int range=randomSelection(options.size());
+        options.get(range).click();
+    }
+
     public void menuSelection(By Locator)
     {
-
 
         select=new Select(driver.findElement(Locator));
         options=select.getOptions();

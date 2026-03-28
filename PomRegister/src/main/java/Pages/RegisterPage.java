@@ -14,7 +14,7 @@ public class RegisterPage extends BasePage{
     private final By emailAddressLocator =By.xpath("//input[@data-qa=\"signup-email\"]");
     private final By signUpBtnLocator =By.xpath("//button[@data-qa=\"signup-button\"]");
 
-    private final By titleLocator=By.xpath("//input[@id=\"id_gender1\"]");
+    private final By titleLocator=By.xpath("//div[@class=\"radio-inline\"]");
     private final By passwordLocator=By.xpath("//input[@data-qa=\"password\"]");
     //Date of Birth Locator
     private  final By dayLocator=By.xpath("//select[@data-qa=\"days\"]");
@@ -53,12 +53,17 @@ public class RegisterPage extends BasePage{
         fClick(signUpBtnLocator);
     }
 
+
     //methods Enter Account Information
 
-    public void titleClick()
+      public void titleClick()
     {
-        fClick(titleLocator);
+
+        // menuSelection(titleLocator);
+        randGenderSelect(titleLocator);
     }
+
+
 
     public void setPassword(String password)
     {
